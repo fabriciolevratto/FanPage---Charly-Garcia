@@ -84,7 +84,7 @@ body{
     align-items: start;
 }
 .top p{
-    font-size: 45px;
+    font-size: 40px;
     color: rgb(255, 255, 255, 29%);
     margin-bottom: 0px;
 }
@@ -302,7 +302,7 @@ body{
     grid-template-rows: repeat(6, 400px);
     grid-template-columns: repeat(2, 1fr);
     gap: 150px;
-    padding-top: 50px;
+    padding: 50px;
 }
 .discos div{
     width: 350px;
@@ -489,42 +489,22 @@ footer div a img{
 }
 
 /*------ RESPONSIVE ------*/
-@media (max-width: 1590px){
-    .top{
-        height: 798px;
-        width: 300px;
-    }
-    .top p{
-        font-size: 40px;
-    }
-    .fotoaAticulo img{
-        width: 420px;
-        height: 470px;
-    }
-}
-
 @media (max-width: 1510px){
+    .sectorDos{
+        justify-content: space-around;
+    }
+    .clics{
+        width: 500px;
+    }
+    .clics p{
+        width: 400px;
+    }
     .clics h2{
         font-size: 96px;
     }
-    .fotoArticulo img{
-        width: 370px;
-        height: 420px;
+    .clics h2 span{
+        font-size: 96px;
     }
-    #solista{
-        display: flex;
-        flex-direction: column;
-    }
-    #solista p{
-        font-size: 24px;
-    }
-    #solista div{
-        display: flex;
-        justify-content: center;
-    }
-}
-
-@media (max-width: 1460px){
     #maquinaPajaros{
         display: flex;
         flex-direction: column;
@@ -538,17 +518,11 @@ footer div a img{
     }
     #maquinaPajaros #video{
         width: 560px;
-        height: 270px;
+        height: 240px;
     }
 }
 
 @media (max-width: 1400px){
-    .clics{
-        width: 500px;
-    }
-    .fotoArticulo{
-        margin-left: 80px;
-    }
     #suiGeneris{
         display: flex;
         flex-direction: column;
@@ -562,7 +536,11 @@ footer div a img{
     }
     #suiGeneris #video{
         width: 560px;
-        height: 270px;
+        height: 200px;
+    }
+    #maquinaPajaros #video{
+        width: 560px;
+        height: 200px;
     }
     #seruGiran{
         display: flex;
@@ -577,7 +555,22 @@ footer div a img{
     }
     #seruGiran #video{
         width: 560px;
-        height: 270px;
+        height: 200px;
+    }
+    #solista{
+        display: flex;
+        flex-direction: column;
+    }
+    #solista p{
+        font-size: 24px;
+    }
+    #solista div{
+        display: flex;
+        justify-content: center;
+    }
+    #solista #video{
+        width: 560px;
+        height: 200px;
     }
 }
 
@@ -603,25 +596,11 @@ footer div a img{
         align-items: start;
     }
     .top p{
-        font-size: 25px;
+        font-size: 35px;
         padding: 20px;
     }
     .clics{
         margin-top: 30px;
-    }
-    .clics h2{
-        font-size: 70px;
-    }
-    .fotoArticulo{
-        width: 100%;
-        display: flex;
-        justify-content: center;
-        margin-left: 0;
-        margin-bottom: 15px;
-    }
-    .fotoArticulo img{
-        width: 250px;
-        height: 300px;
     }
     .sectorTres{
         height: 600px;
@@ -629,21 +608,11 @@ footer div a img{
     .sectorTres a img{
         height: 600px;
     }
-    #suiGeneris #video{
-        width: 560px;
-        height: 200px;
+    #carouselExample{
+        display: none;
     }
-    #maquinaPajaros #video{
-        width: 560px;
-        height: 200px;
-    }
-    #seruGiran #video{
-        width: 560px;
-        height: 200px;
-    }
-    #solista #video{
-        width: 560px;
-        height: 200px;
+    .texto h1, h3{
+        font-size: 70px;
     }
     .contenedorRec p{
         font-size: 30px;
@@ -657,12 +626,6 @@ footer div a img{
 }
 
 @media (max-width: 1090px){
-    .sectorTres{
-        height: 500px;
-    }
-    .sectorTres a img{
-        height: 500px;
-    }
     #sobreEl p{
         font-size: 24px;
     }
@@ -690,6 +653,12 @@ footer div a img{
 }
 
 @media (max-width: 910px){
+    .sectorTres{
+        height: 500px;
+    }
+    .sectorTres a img{
+        height: 500px;
+    }
     .discos{
         display: flex;
         flex-direction: column;
@@ -703,6 +672,18 @@ footer div a img{
         width: 300px;
         height: 300px;
     }
+    .discos img:hover{
+        width: 350px;
+        height: 350px;
+    }
+    .imagen13 img{
+        width: 300px;
+        height: 300px;
+    }
+    .imagen13 img:hover{
+        width: 350px;
+        height: 350px;
+    }
     .item1, .item2{
         height: 300px;
     }
@@ -712,28 +693,8 @@ footer div a img{
 }
 
 @media (max-width: 845px){
-    .sectorUno{
-        padding-left: 20px;
-    }
-    .tituloPequeño{
-        font-size: 70px;
-    }
-    .tituloGrande{
-        font-size: 90px;
-    }
     .top{
-        height: 100px;
-        margin-bottom: 50px;
-    }
-    .clics h2{
-        font-size: 50px;
-    }
-    .clics p{
-        font-size: 20px;
-    }
-    .fotoArticulo img{
-        width: 200px;
-        height: 250px;
+        display: none;
     }
     .sectorTres{
         width: 100%;
@@ -776,42 +737,96 @@ footer div a img{
 }
 
 @media (max-width: 670px){
-    header{
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        justify-content: start;
+    .tituloPequeño{
+        font-size: 64px;
     }
-    header nav ul{
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        justify-content: start;
+    .tituloGrande{
+        font-size: 85px;
+    }
+    .clics{
+        width: 250px;
     }
     .clics h2{
-        margin-top: 40px;
+        font-size: 70px;
+        text-align: center;
+    }
+    .clics h2 span{
+        font-size: 70px;
+        text-align: center;
     }
     .clics p{
+        width: 250px;
+    }
+    #sobreEl h1, h2{
+        font-size: 50px;
+    }
+    #sobreEl p{
+        font-size: 17px;
+    }
+    #sobreEl div{
+        display:none;
+    }
+    #suiGeneris h3, #maquinaPajaros h3, #seruGiran h3, #solista h3{
+        font-size: 50px;
+        margin-bottom: 0px;
+    }
+    #suiGeneris p, #maquinaPajaros p, #seruGiran p, #solista p{
+        font-size: 17px;
+    }
+    .fondoDisco h1{
+        font-size: 50px;
+    }
+    .discos div{
+        width: 250px;
+        height: 250px;
+    }
+    .discos img{
+        width: 250px;
+        height: 250px;
+    }
+    .discos img:hover{
+        width: 300px;
+        height: 300px;
+    }
+    .imagen13{
+        width: 250px;
+        height: 250px;
+        margin-top: 150px;
+    }
+    .imagen13 img{
+        width: 250px;
+        height: 250px;
+    }
+    .imagen13 img:hover{
+        width: 300px;
+        height: 300px;
+    }
+    .contenedorRec p{
         font-size: 20px;
-        width: 400px;
-        text-align: center;
-        margin-top: 20px;
+        margin: 50px;
     }
-    .fotoArticulo img{
-        display: none;
+    .item1, .item2{
+        height: 200px;
     }
-    footer div p{
-        font-size: 10px;
-    }
-    footer div a img{
-        width: 20px;
-        height: 20px;
+    .item3{
+        height: 200px;
     }
     .fondoGaleria h1{
-        font-size: 70px;
+        font-size: 50px;
     }
     .galeria{
         display: flex;
         flex-direction: column;
+    }
+    footer{
+        flex-direction: column;
+    }
+    footer div p{
+        font-size: 10px;
+        text-align: center;
+    }
+    footer div a img{
+        width: 20px;
+        height: 20px;
     }
 }

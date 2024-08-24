@@ -1,0 +1,39 @@
+@import url("https://fonts.googleapis.com/css2?family=League+Spartan:wght@100..900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=League+Gothic&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Ledger&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box; }
+
+body {
+  font-family: "League Gothic"; }
+
+  .navbar-color {
+    background-color: black;
+}
+
+.navbar{
+    img{
+      width: 55px;
+      height: 55px;
+      border-radius: 50%;
+      border: 2px, solid, white;
+        &:hover{
+          border: 2px, solid, goldenrod;
+        }
+    }
+}
+
+.nav-link{
+  font-size: 24px;
+  color: white;
+    &:hover{
+      color: goldenrod;
+    }
+    &:active{
+      color: black;
+      background-color: goldenrod;
+    }
+}

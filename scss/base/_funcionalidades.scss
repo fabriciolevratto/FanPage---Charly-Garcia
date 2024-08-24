@@ -1,0 +1,76 @@
+/*VARIABLE
+
+$color-principal: black;
+$color-secundario: white;*/
+
+/*LISTAS
+
+$colores: red, green, blue, tomato, pink;
+$font: 20px, 25px, 30px, 42px;
+
+se aplica:
+h1{
+    color: nth($colores, 4);
+}*/
+
+/*OPERACIONES
+
+$ancho: 750px;
+img{
+    widht: $ancho / 2;
+}*/
+
+/*MAPAS
+
+$boton:(
+    bg-color: black,
+    border-boton: 2px solid tomato,
+    color-text: white,
+);
+
+.boton {
+background-color: map-get($boton, bg-color);
+color: map-get($boton, color-text);
+}*/
+
+/*EXTENDS
+Valores fijos.
+
+%enlaces{
+    text-decoration: none;
+    color: black;
+}
+
+.boton{
+    background-color: aqua;
+    border: solid 1px black;
+    @extend %enlaces;
+}*/
+
+/* MIXIN
+@mixin flex($flex, $justify, $align){
+    display: $flex;
+    justify-content: $justify;
+    align-items: $align;
+}
+
+.galeria{
+    @include flex(flex, space-around, center)
+}*/
+
+/*CONDICIONALES
+
+@mixin modos ($modo){
+    @if $modo == black{
+        border: solid 2px blue;
+    }
+    @else{
+        border: solid 2px red;
+    }
+}
+
+.bg-elemento{
+    @include modos (black);
+}*/
+
+

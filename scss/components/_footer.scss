@@ -1,0 +1,27 @@
+footer{
+    background-color: black;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+        div{
+            p{
+            font-family: "League Spartan";
+            color: white;
+            font-size: 15px;
+            margin-bottom: 0px;
+                &::selection{
+                    color: goldenrod;
+                }
+            }
+        }
+        div{
+            a{
+                margin: 10px;
+                img{
+                    width: 30px;
+                    height: 30px;
+                }
+            }
+        }
+}

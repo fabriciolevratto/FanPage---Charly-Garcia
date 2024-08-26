@@ -144,6 +144,9 @@
 }
 
 @media (max-width: 1090px){
+    .sectorUno{
+        background-position:right;
+    }
     #sobreEl{
         p{
             font-size: 24px;
@@ -182,6 +185,9 @@
     .navbar-toggler{
         background-color: white;
     }
+    .contenedorImg{
+        background-position: left;
+    }
 }
 
 @media (max-width: 910px){
@@ -200,12 +206,13 @@
         div{
             width: 300px;
             height: 300px;
-            img{
-                width: 300px;
-                height: 300px;
-                &:hover{
-                    width: 350px;
-                    height: 350px;
+            a{
+                img{
+                    width: 300px;
+                    height: 300px;
+                    &:hover{
+                        border: 2px solid goldenrod;
+                    }
                 }
             }
         }
@@ -215,8 +222,7 @@
             width: 300px;
             height: 300px;
             &:hover{
-                width: 350px;
-                height: 350px;
+                border: 2px solid goldenrod;
             }
         }
     }
@@ -285,6 +291,9 @@
 }
 
 @media (max-width: 670px){
+    .sectorUno{
+        background-position: -60em;
+    }
     .tituloPequeño{
         font-size: 64px;
     }
@@ -364,12 +373,13 @@
         div{
             width: 250px;
             height: 250px;
-            img{
-                width: 250px;
-                height: 250px;
-                &:hover{
-                    width: 300px;
-                    height: 300px;
+            a{
+                img{
+                    width: 250px;
+                    height: 250px;
+                    &:hover{
+                        border: 2px solid goldenrod;
+                    }
                 }
             }
         }
@@ -382,8 +392,7 @@
                 width: 250px;
                 height: 250px;
                 &:hover{
-                    width: 300px;
-                    height: 300px;
+                    border: 2px solid goldenrod;
                 }
             }
     }
@@ -392,6 +401,9 @@
             font-size: 20px;
             margin: 50px;
         }
+    }
+    .contenedorImg{
+        background-position: -20em;
     }
     .item1, .item2{
         height: 200px;

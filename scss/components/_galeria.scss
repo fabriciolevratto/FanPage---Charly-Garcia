@@ -8,6 +8,7 @@
             font-size: 96px;
             color: white;
             text-align: center;
+            margin: 10px;
             &::selection{
                 color: goldenrod;
             }
@@ -19,6 +20,7 @@
     display: grid;
     gap: 15px;
     padding-top: 20px;
+    padding-bottom: 20px;
     grid-template-rows: repeat(9, auto);
     grid-template-columns: repeat(3, auto);
     grid-template-areas: 

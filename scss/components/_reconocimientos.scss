@@ -5,10 +5,11 @@
 .contenedorImg{
     width: 100%;
     height: calc(100vh - 74px);
-    img{
-        width: 100%;
-        height: calc(100vh - 74px);
-    }
+    background-image: url(../img/charlyreconocimiento.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
 }
 
 .contenedorRec{
@@ -34,6 +35,7 @@
 .contenedorFotos{
     width: 80%;
     margin: auto;
+    padding-bottom: 10px;
     display: grid;
     gap: 15px;
     grid-template-rows: repeat(2, 1fr);
@@ -45,19 +47,22 @@
 
 .item1{
     width: 100%;
-    height: 500px;
+    height: 374px;
     border-radius: 20px;
     grid-area: item1;
+    border: 2px solid goldenrod;
 }
 .item2{
     width: 100%;
-    height: 500px;
+    height: 374px;
     border-radius: 20px;
     grid-area: item2;
+    border: 2px solid goldenrod;
 }
 .item3{
     width: 100%;
     height: 374px;
     border-radius: 20px;
     grid-area: item3;
+    border: 2px solid goldenrod;
 }

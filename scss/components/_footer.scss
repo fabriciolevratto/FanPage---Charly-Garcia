@@ -1,17 +1,15 @@
 footer{
     background-color: black;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
+    @include flex(flex, space-between, center);
     padding: 10px;
         div{
             p{
             font-family: "League Spartan";
-            color: white;
+            color: $color-fuente;
             font-size: 15px;
             margin-bottom: 0px;
                 &::selection{
-                    color: goldenrod;
+                    color: $color-selection;
                 }
             }
         }

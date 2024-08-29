@@ -7,19 +7,21 @@
     background-position: center;
     display: flex;
         div{
-            display: flex;
-            justify-content: end;
-            align-items: end;
+            @include flex(flex, end, end);
             margin: 15px;
         }
         p{
             margin-bottom: 100px;
         }
         img{
-            border: 3px solid white;
+            border: 3px solid goldenrod;
             border-radius: 50%;
             width: 400px;
             height: 400px;
+            transition-duration: 1s;
+            &:hover{
+                transform: rotateY(180deg);
+            }
         }
 }
 
@@ -32,9 +34,7 @@
     background-position: center;
     display: flex;
         div{
-            display: flex;
-            justify-content: end;
-            align-items: center;
+            @include flex(flex, start, center);
             margin: 15px;
         }
         p{
@@ -51,9 +51,7 @@
     background-position: center;
     display: flex;
         div{
-            display: flex;
-            justify-content: end;
-            align-items: center;
+            @include flex(flex, end, center);
             margin: 15px;
         }
         p{
@@ -70,9 +68,7 @@
     background-position: center;
     display: flex;
         div{
-            display: flex;
-            justify-content: end;
-            align-items: center;
+            @include flex(flex, end, center);
             margin: 15px;
         }
         p{
@@ -89,50 +85,47 @@
     background-position: center;
     display: flex;
         div{
-            display: flex;
-            justify-content: end;
-            align-items: center;
+            @include flex(flex, end, center);
             margin: 15px;
             margin-bottom: 138px;
         }
 }
 
 .texto{
-    display: flex;
+    @include flex(flex, space-between, start);
     flex-direction: column;
-    justify-content: space-between;
         h1{
             font-size: 96px;
             padding: 10px;
-            color: white;
+            color: $color-fuente;
             &::selection{
-                color: goldenrod;
+                color: $color-selection;
             }
         }
         h3{
             font-size: 96px;
             padding: 10px;
-            color: white;
+            color: $color-fuente;
             &::selection{
-                color: goldenrod;
+                color: $color-selection;
             }
         }
         h2{
             font-size: 64px;
             padding: 10px;
-            color: white;
+            color: $color-fuente;
             &::selection{
-                color: goldenrod;
+                color: $color-selection;
             }
             
         }
         p{
             font-size: 25px;
             padding: 10px;
-            color: white;
+            color: $color-fuente;
             background-color: rgba(0, 0, 0, 0.5);
             &::selection{
-                color: goldenrod;
+                color: $color-selection;
             }
         }
 }

@@ -1,7 +1,7 @@
-/*VARIABLE
+/*VARIABLE*/
 
-$color-principal: black;
-$color-secundario: white;*/
+$color-fuente: white;
+$color-selection: goldenrod;
 
 /*LISTAS
 
@@ -47,14 +47,14 @@ Valores fijos.
     @extend %enlaces;
 }*/
 
-/* MIXIN
+/*MIXIN*/
 @mixin flex($flex, $justify, $align){
     display: $flex;
     justify-content: $justify;
     align-items: $align;
 }
 
-.galeria{
+/*.galeria{
     @include flex(flex, space-around, center)
 }*/
 

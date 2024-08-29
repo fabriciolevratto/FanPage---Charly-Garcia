@@ -15,19 +15,17 @@
 .contenedorRec{
     width: 100%;
     height: 1000px;
-    display: flex;
+    @include flex(flex, start, center);
     flex-direction: column;
-    justify-content: start;
-    align-items: center;
         p{
             font-family: "League Gothic";
             font-size: 36px;
-            color: white;
+            color: $color-fuente;
             text-align: center;
             margin: 60px;
             border-bottom: 2px solid white;
             &::selection{
-                color: goldenrod;
+                color: $color-selection;
             }
         }
 }

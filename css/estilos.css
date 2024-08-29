@@ -1,8 +1,5 @@
 @charset "UTF-8";
-/*VARIABLE
-
-$color-principal: black;
-$color-secundario: white;*/
+/*VARIABLE*/
 /*LISTAS
 
 $colores: red, green, blue, tomato, pink;
@@ -43,14 +40,8 @@ Valores fijos.
     border: solid 1px black;
     @extend %enlaces;
 }*/
-/* MIXIN
-@mixin flex($flex, $justify, $align){
-    display: $flex;
-    justify-content: $justify;
-    align-items: $align;
-}
-
-.galeria{
+/*MIXIN*/
+/*.galeria{
     @include flex(flex, space-around, center)
 }*/
 /*CONDICIONALES
@@ -85,9 +76,11 @@ body {
   width: 55px;
   height: 55px;
   border-radius: 50%;
-  border: 2px, solid, white; }
+  border: 2px, solid, white;
+  transition-duration: 1s; }
   .navbar img:hover {
-    border: 2px, solid, goldenrod; }
+    border: 2px, solid, goldenrod;
+    transform: scale(1.1); }
 
 .nav-link {
   font-size: 24px;
@@ -130,15 +123,16 @@ body {
   height: 798px;
   background-color: #191919;
   display: flex;
+  justify-content: start;
   align-items: center; }
 
 .top {
   height: 798px;
   width: 300px;
   display: flex;
-  flex-direction: column;
   justify-content: center;
-  align-items: start; }
+  align-items: start;
+  flex-direction: column; }
   .top p {
     font-size: 40px;
     color: white;
@@ -149,9 +143,9 @@ body {
 .clics {
   width: 700px;
   display: flex;
-  flex-direction: column;
   justify-content: center;
-  align-items: center; }
+  align-items: center;
+  flex-direction: column; }
   .clics h2 {
     font-size: 128px;
     text-decoration: underline;
@@ -176,7 +170,10 @@ body {
 .boton {
   width: 200px;
   height: 50px;
-  margin: 25px; }
+  margin: 25px;
+  transition-duration: 1s; }
+  .boton:hover {
+    transform: scale(1.1); }
 
 #carouselExample {
   width: 450px;
@@ -196,10 +193,35 @@ body {
       bottom: 0;
       font-size: 50px;
       padding: 10px;
-      color: white; }
-    .sectorTres a img {
-      height: 700px;
-      width: 100%; }
+      color: white;
+      background-color: rgba(0, 0, 0, 0.2);
+      transition-duration: 1s; }
+      .sectorTres a p:hover {
+        color: goldenrod; }
+
+.sui {
+  background-image: url(../img/suigeneris.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center; }
+
+.maq {
+  background-image: url(../img/maquinapajaros.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center; }
+
+.seru {
+  background-image: url(../img/serugiran.jpeg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center; }
+
+.solo {
+  background-image: url(../img/solista.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center; }
 
 #sobreEl {
   width: 100%;
@@ -217,10 +239,13 @@ body {
   #sobreEl p {
     margin-bottom: 100px; }
   #sobreEl img {
-    border: 3px solid white;
+    border: 3px solid goldenrod;
     border-radius: 50%;
     width: 400px;
-    height: 400px; }
+    height: 400px;
+    transition-duration: 1s; }
+    #sobreEl img:hover {
+      transform: rotateY(180deg); }
 
 #suiGeneris {
   width: 100%;
@@ -232,7 +257,7 @@ body {
   display: flex; }
   #suiGeneris div {
     display: flex;
-    justify-content: end;
+    justify-content: start;
     align-items: center;
     margin: 15px; }
   #suiGeneris p {
@@ -287,8 +312,9 @@ body {
 
 .texto {
   display: flex;
-  flex-direction: column;
-  justify-content: space-between; }
+  justify-content: space-between;
+  align-items: start;
+  flex-direction: column; }
   .texto h1 {
     font-size: 96px;
     padding: 10px;
@@ -321,8 +347,9 @@ body {
   background-size: cover;
   background-position: center;
   display: flex;
-  flex-direction: column;
-  align-items: center; }
+  justify-content: start;
+  align-items: center;
+  flex-direction: column; }
   .fondoDisco h1 {
     color: white;
     font-size: 96px;
@@ -338,15 +365,13 @@ body {
   padding: 50px; }
   .discos div {
     width: 350px;
-    height: 350px; }
-    .discos div a:active {
-      width: 325px;
-      height: 325px; }
+    height: 350px;
+    transition-duration: 1s; }
+    .discos div:hover {
+      transform: scale(1.1); }
     .discos div a img {
       width: 350px;
       height: 350px; }
-      .discos div a img:hover {
-        border: 2px solid goldenrod; }
     .discos div p {
       font-size: 30px;
       color: white;
@@ -359,10 +384,13 @@ body {
   width: 350px;
   height: 350px;
   display: flex;
-  flex-direction: column;
   justify-content: end;
   align-items: center;
-  margin-top: 80px; }
+  flex-direction: column;
+  margin-top: 80px;
+  transition-duration: 1s; }
+  .imagen13:hover {
+    transform: scale(1.1); }
   .imagen13 p {
     font-size: 30px;
     color: white;
@@ -372,8 +400,6 @@ body {
   .imagen13 img {
     width: 350px;
     height: 350px; }
-    .imagen13 img:hover {
-      border: 2px solid goldenrod; }
 
 .fondoReconocimientos {
   background-color: #191919; }
@@ -391,9 +417,9 @@ body {
   width: 100%;
   height: 1000px;
   display: flex;
-  flex-direction: column;
   justify-content: start;
-  align-items: center; }
+  align-items: center;
+  flex-direction: column; }
   .contenedorRec p {
     font-family: "League Gothic";
     font-size: 36px;
@@ -438,8 +464,9 @@ body {
 .fondoGaleria {
   background-color: #191919;
   display: flex;
-  flex-direction: column;
-  align-items: center; }
+  justify-content: start;
+  align-items: center;
+  flex-direction: column; }
   .fondoGaleria h1 {
     font-family: "Ledger";
     font-size: 96px;
@@ -461,9 +488,10 @@ body {
   .galeria img {
     width: 100%;
     height: 100%;
-    object-fit: cover; }
+    object-fit: cover;
+    transition-duration: 1s; }
     .galeria img:hover {
-      border: 2px solid goldenrod; }
+      transform: scale(0.9); }
 
 .img1 {
   grid-area: img1; }
@@ -545,9 +573,9 @@ footer {
         font-size: 96px; }
   #maquinaPajaros {
     display: flex;
-    flex-direction: column;
+    justify-content: start;
     align-items: center;
-    justify-content: start; }
+    flex-direction: column; }
     #maquinaPajaros p {
       font-size: 24px;
       text-align: center;
@@ -559,9 +587,9 @@ footer {
 @media (max-width: 1400px) {
   #suiGeneris {
     display: flex;
-    flex-direction: column;
+    justify-content: start;
     align-items: center;
-    justify-content: start; }
+    flex-direction: column; }
     #suiGeneris p {
       font-size: 24px;
       text-align: center;
@@ -574,9 +602,9 @@ footer {
     height: 200px; }
   #seruGiran {
     display: flex;
-    flex-direction: column;
+    justify-content: start;
     align-items: center;
-    justify-content: start; }
+    flex-direction: column; }
     #seruGiran p {
       font-size: 24px;
       text-align: center;
@@ -609,9 +637,9 @@ footer {
   .top {
     width: 100%;
     display: flex;
-    flex-direction: row;
     justify-content: space-between;
-    align-items: start; }
+    align-items: start;
+    flex-direction: row; }
     .top p {
       font-size: 35px;
       padding: 20px; }
@@ -619,8 +647,8 @@ footer {
     margin-top: 30px; }
   .sectorTres {
     height: 600px; }
-    .sectorTres a img {
-      height: 600px; }
+    .sectorTres a p {
+      font-size: 40px; }
   #carouselExample {
     display: none; }
   .texto h1 {
@@ -661,8 +689,10 @@ footer {
 @media (max-width: 910px) {
   .sectorTres {
     height: 500px; }
-    .sectorTres a img {
-      height: 500px; }
+    .sectorTres a p {
+      font-size: 35px; }
+  #solista {
+    background-position: -5em; }
   .discos {
     display: flex;
     flex-direction: column;
@@ -700,6 +730,14 @@ footer {
         height: 100%;
         width: 100%;
         object-fit: cover; }
+  .sui {
+    background-position: center 9%; }
+  .maq {
+    background-position: center 20%; }
+  .seru {
+    background-position: center 30%; }
+  .solo {
+    background-position: center 20%; }
   .contenedorFotos {
     display: flex;
     flex-direction: column;

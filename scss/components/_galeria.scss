@@ -4,10 +4,10 @@
     flex-direction: column;
         h1{
             font-family: "Ledger";
-            font-size: 96px;
+            font-size: 6rem;
             color: $color-fuente;
             text-align: center;
-            margin: 10px;
+            margin: .625rem;
             &::selection{
                 color: $color-selection;
             }
@@ -17,9 +17,9 @@
 .galeria{
     width: 70%;
     display: grid;
-    gap: 15px;
-    padding-top: 20px;
-    padding-bottom: 20px;
+    gap: .9375rem;
+    padding-top: 1.25rem;
+    padding-bottom: 1.25rem;
     grid-template-rows: repeat(9, auto);
     grid-template-columns: repeat(3, auto);
     grid-template-areas: 

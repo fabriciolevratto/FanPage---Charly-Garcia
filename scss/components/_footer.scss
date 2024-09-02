@@ -1,13 +1,13 @@
 footer{
     background-color: black;
     @include flex(flex, space-between, center);
-    padding: 10px;
+    padding: .625rem;
         div{
             p{
             font-family: "League Spartan";
             color: $color-fuente;
-            font-size: 15px;
-            margin-bottom: 0px;
+            font-size: .9375rem;
+            margin-bottom: 0rem;
                 &::selection{
                     color: $color-selection;
                 }
@@ -15,10 +15,10 @@ footer{
         }
         div{
             a{
-                margin: 10px;
+                margin: .625rem;
                 img{
-                    width: 30px;
-                    height: 30px;
+                    width: 1.875rem;
+                    height: 1.875rem;
                 }
             }
         }

@@ -27,14 +27,13 @@
 
 #suiGeneris{
     width: 100%;
-    height: 46.4375rem;
     background-image: url(../img/bat.jpg);
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
-    display: flex;
+    @include flex(flex, start, center);
+    flex-direction: column;
         div{
-            @include flex(flex, start, center);
             margin: .9375rem;
         }
         p{
@@ -44,14 +43,13 @@
 
 #maquinaPajaros{
     width: 100%;
-    height: 46.4375rem;
     background-image: url(../img/guitar.jpg);
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
-    display: flex;
+    @include flex(flex, start, center);
+    flex-direction: column;
         div{
-            @include flex(flex, end, center);
             margin: .9375rem;
         }
         p{
@@ -61,14 +59,13 @@
 
 #seruGiran{
     width: 100%;
-    height: 46.4375rem;
     background-image: url(../img/bass.jpg);
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
-    display: flex;
+    @include flex(flex, start, center);
+    flex-direction: column;
         div{
-            @include flex(flex, end, center);
             margin: .9375rem;
         }
         p{
@@ -78,16 +75,14 @@
 
 #solista{
     width: 100%;
-    height: 51.875rem;
     background-image: url(../img/micro.jpg);
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
-    display: flex;
+    @include flex(flex, start, center);
+    flex-direction: column;
         div{
-            @include flex(flex, end, center);
             margin: .9375rem;
-            margin-bottom: 8.625rem;
         }
 }
 

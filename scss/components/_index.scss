@@ -58,15 +58,15 @@
         h2{
             font-size: 8rem;
             text-decoration: underline;
-            color: black;
+            color: nth($colores, 2);
                 &::selection{
                 color: $color-selection;
                 }
             span{
-                color: black;
+                color: nth($colores, 2);
                 font-size: 8rem;
                 text-decoration: underline;
-                text-decoration-color: black;
+                text-decoration-color: nth($colores, 2);
                     &::selection{
                     color: $color-selection;
                     }

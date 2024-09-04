@@ -40,6 +40,18 @@ Valores fijos.
     border: solid 1px black;
     @extend %enlaces;
 }*/
+@import url("https://fonts.googleapis.com/css2?family=League+Spartan:wght@100..900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=League+Gothic&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Ledger&display=swap");
+.nav-link {
+  font-size: 1.5rem;
+  color: white; }
+  .nav-link:hover {
+    color: goldenrod; }
+  .nav-link:active {
+    color: black;
+    background-color: goldenrod; }
+
 /*MIXIN*/
 /*.galeria{
     @include flex(flex, space-around, center)
@@ -58,9 +70,6 @@ Valores fijos.
 .bg-elemento{
     @include modos (black);
 }*/
-@import url("https://fonts.googleapis.com/css2?family=League+Spartan:wght@100..900&display=swap");
-@import url("https://fonts.googleapis.com/css2?family=League+Gothic&display=swap");
-@import url("https://fonts.googleapis.com/css2?family=Ledger&display=swap");
 * {
   margin: 0;
   padding: 0;
@@ -81,15 +90,6 @@ body {
   .navbar img:hover {
     border: .125rem, solid, goldenrod;
     transform: scale(1.1); }
-
-.nav-link {
-  font-size: 1.5rem;
-  color: white; }
-  .nav-link:hover {
-    color: goldenrod; }
-  .nav-link:active {
-    color: black;
-    background-color: goldenrod; }
 
 .sectorUno {
   width: 100%;
@@ -249,66 +249,61 @@ body {
 
 #suiGeneris {
   width: 100%;
-  height: 46.4375rem;
   background-image: url(../img/bat.jpg);
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
-  display: flex; }
+  display: flex;
+  justify-content: start;
+  align-items: center;
+  flex-direction: column; }
   #suiGeneris div {
-    display: flex;
-    justify-content: start;
-    align-items: center;
     margin: .9375rem; }
   #suiGeneris p {
     margin-bottom: 6.1875rem; }
 
 #maquinaPajaros {
   width: 100%;
-  height: 46.4375rem;
   background-image: url(../img/guitar.jpg);
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
-  display: flex; }
+  display: flex;
+  justify-content: start;
+  align-items: center;
+  flex-direction: column; }
   #maquinaPajaros div {
-    display: flex;
-    justify-content: end;
-    align-items: center;
     margin: .9375rem; }
   #maquinaPajaros p {
     margin-bottom: 1.4375rem; }
 
 #seruGiran {
   width: 100%;
-  height: 46.4375rem;
   background-image: url(../img/bass.jpg);
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
-  display: flex; }
+  display: flex;
+  justify-content: start;
+  align-items: center;
+  flex-direction: column; }
   #seruGiran div {
-    display: flex;
-    justify-content: end;
-    align-items: center;
     margin: .9375rem; }
   #seruGiran p {
     margin-bottom: 3.75rem; }
 
 #solista {
   width: 100%;
-  height: 51.875rem;
   background-image: url(../img/micro.jpg);
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
-  display: flex; }
+  display: flex;
+  justify-content: start;
+  align-items: center;
+  flex-direction: column; }
   #solista div {
-    display: flex;
-    justify-content: end;
-    align-items: center;
-    margin: .9375rem;
-    margin-bottom: 8.625rem; }
+    margin: .9375rem; }
 
 .texto {
   display: flex;
@@ -574,59 +569,7 @@ footer {
     .clics h2 {
       font-size: 6rem; }
       .clics h2 span {
-        font-size: 6rem; }
-  #maquinaPajaros {
-    display: flex;
-    justify-content: start;
-    align-items: center;
-    flex-direction: column; }
-    #maquinaPajaros p {
-      font-size: 1.5rem;
-      text-align: center;
-      margin-bottom: 1.25rem; }
-    #maquinaPajaros #video {
-      width: 35rem;
-      height: 15rem; } }
-
-@media (max-width: 1400px) {
-  #suiGeneris {
-    display: flex;
-    justify-content: start;
-    align-items: center;
-    flex-direction: column; }
-    #suiGeneris p {
-      font-size: 1.5rem;
-      text-align: center;
-      margin-bottom: 1.25rem; }
-    #suiGeneris #video {
-      width: 35rem;
-      height: 12.5rem; }
-  #maquinaPajaros #video {
-    width: 35rem;
-    height: 12.5rem; }
-  #seruGiran {
-    display: flex;
-    justify-content: start;
-    align-items: center;
-    flex-direction: column; }
-    #seruGiran p {
-      font-size: 1.5rem;
-      text-align: center;
-      margin-bottom: 1.25rem; }
-    #seruGiran #video {
-      width: 35rem;
-      height: 12.5rem; }
-  #solista {
-    display: flex;
-    flex-direction: column; }
-    #solista p {
-      font-size: 1.5rem; }
-    #solista div {
-      display: flex;
-      justify-content: center; }
-    #solista #video {
-      width: 35rem;
-      height: 12.5rem; } }
+        font-size: 6rem; } }
 
 @media (max-width: 1280px) {
   .sectorUno {
@@ -669,22 +612,6 @@ footer {
 @media (max-width: 1090px) {
   .sectorUno {
     background-position: right; }
-  #sobreEl p {
-    font-size: 1.5rem; }
-  #sobreEl img {
-    width: 18.75rem;
-    height: 18.75rem;
-    margin-bottom: 3.125rem; }
-  #suiGeneris div {
-    display: none; }
-  #maquinaPajaros div {
-    display: none; }
-  #seruGiran div {
-    display: none; }
-  #solista div {
-    display: none; }
-  .texto h3 {
-    margin-bottom: 3.125rem; }
   .navbar-toggler {
     background-color: white; }
   .contenedorImg {
@@ -695,8 +622,20 @@ footer {
     height: 31.25rem; }
     .sectorTres a p {
       font-size: 2.1875rem; }
+  #suiGeneris div #video {
+    width: 31.25rem;
+    height: 18.75rem; }
+  #maquinaPajaros div #video {
+    width: 31.25rem;
+    height: 18.75rem; }
+  #seruGiran div #video {
+    width: 31.25rem;
+    height: 18.75rem; }
   #solista {
     background-position: -5em; }
+    #solista div #video {
+      width: 31.25rem;
+      height: 18.75rem; }
   .discos {
     display: flex;
     flex-direction: column;
@@ -761,7 +700,8 @@ footer {
 
 @media (max-width: 670px) {
   .sectorUno {
-    background-image: url(../img/charlycelular.jpg); }
+    background-image: url(../img/charlycelular.jpg);
+    height: 49.375rem; }
   .tituloPequeño {
     font-size: 4rem;
     background-color: rgba(0, 0, 0, 0.5); }
@@ -778,34 +718,20 @@ footer {
         text-align: center; }
     .clics p {
       width: 15.625rem; }
-  #sobreEl h1 {
-    font-size: 3.125rem; }
-  #sobreEl h2 {
-    font-size: 3.125rem; }
-  #sobreEl p {
-    font-size: 1.0625rem; }
   #sobreEl div {
     display: none; }
-  #suiGeneris h3 {
-    font-size: 3.125rem;
-    margin-bottom: 0rem; }
-  #suiGeneris p {
-    font-size: 1.0625rem; }
-  #maquinaPajaros h3 {
-    font-size: 3.125rem;
-    margin-bottom: 0rem; }
-  #maquinaPajaros p {
-    font-size: 1.0625rem; }
-  #seruGiran h3 {
-    font-size: 3.125rem;
-    margin-bottom: 0rem; }
-  #seruGiran p {
-    font-size: 1.0625rem; }
-  #solista h3 {
-    font-size: 3.125rem;
-    margin-bottom: 0rem; }
-  #solista p {
-    font-size: 1.0625rem; }
+  #suiGeneris div #video {
+    width: 18.75rem;
+    height: 9.375rem; }
+  #maquinaPajaros div #video {
+    width: 18.75rem;
+    height: 9.375rem; }
+  #seruGiran div #video {
+    width: 18.75rem;
+    height: 9.375rem; }
+  #solista div #video {
+    width: 18.75rem;
+    height: 9.375rem; }
   .fondoDisco h1 {
     font-size: 3.125rem; }
   .discos div {

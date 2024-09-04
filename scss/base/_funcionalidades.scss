@@ -12,6 +12,7 @@ se aplica:
 h1{
     color: nth($colores, 4);
 }*/
+$colores: white, black, goldenrod;
 
 /*OPERACIONES
 
@@ -46,6 +47,17 @@ Valores fijos.
     border: solid 1px black;
     @extend %enlaces;
 }*/
+%navbar{
+    font-size: 1.5rem;
+    color: $color-fuente;
+    &:hover{
+        color: goldenrod;
+      }
+      &:active{
+        color: black;
+        background-color: goldenrod;
+      }
+}
 
 /*MIXIN*/
 @mixin flex($flex, $justify, $align){

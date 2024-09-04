@@ -14,69 +14,6 @@
                     }
             }
     }
-    #maquinaPajaros{
-        @include flex(flex, start, center);
-        flex-direction: column;
-            p{
-                font-size: 1.5rem;
-                text-align: center;
-                margin-bottom: 1.25rem;
-            }
-            #video{
-                width: 35rem;
-                height: 15rem;
-            }
-    }
-}
-
-@media (max-width: 1400px){
-    #suiGeneris{
-        @include flex(flex, start, center);
-        flex-direction: column;
-            p{
-                font-size: 1.5rem;
-                text-align: center;
-                margin-bottom: 1.25rem;
-            }
-            #video{
-                width: 35rem;
-                height: 12.5rem;
-            }
-    }
-    #maquinaPajaros{
-        #video{
-            width: 35rem;
-            height: 12.5rem;
-        }
-    }
-    #seruGiran{
-        @include flex(flex, start, center);
-        flex-direction: column;
-            p{
-                font-size: 1.5rem;
-                text-align: center;
-                margin-bottom: 1.25rem;
-            }
-            #video{
-                width: 35rem;
-                height: 12.5rem;
-            }
-    }
-    #solista{
-        display: flex;
-        flex-direction: column;
-            p{
-                font-size: 1.5rem;
-            }
-            div{
-                display: flex;
-                justify-content: center;
-            }
-            #video{
-                width: 35rem;
-                height: 12.5rem;
-            }
-    }
 }
 
 @media (max-width: 1280px){
@@ -139,41 +76,6 @@
     .sectorUno{
         background-position:right;
     }
-    #sobreEl{
-        p{
-            font-size: 1.5rem;
-        }
-        img{
-            width: 18.75rem;
-            height: 18.75rem;
-            margin-bottom: 3.125rem;
-        }
-    }
-    #suiGeneris{
-        div{
-            display: none;
-        }
-    }
-    #maquinaPajaros{
-        div{
-            display: none;
-        }
-    }
-    #seruGiran{
-        div{
-            display: none;
-        }
-    }
-    #solista{
-        div{
-            display: none;
-        }
-    }
-    .texto{
-        h3{
-            margin-bottom: 3.125rem;
-        }
-    }
     .navbar-toggler{
         background-color: white;
     }
@@ -191,8 +93,38 @@
                 }
             }
     }
+    #suiGeneris{
+        div{
+            #video{
+                width: 31.25rem;
+            height: 18.75rem;
+            }
+        }
+    }
+    #maquinaPajaros{
+        div{
+            #video{
+                width: 31.25rem;
+            height: 18.75rem;
+            }
+        }
+    }
+    #seruGiran{
+        div{
+            #video{
+                width: 31.25rem;
+            height: 18.75rem;
+            }
+        }
+    }
     #solista{
         background-position: -5em;
+        div{
+            #video{
+                width: 31.25rem;
+            height: 18.75rem;
+            }
+        }
     }
     .discos{
         display: flex;
@@ -300,6 +232,7 @@
 @media (max-width: 670px){
     .sectorUno{
         background-image: url(../img/charlycelular.jpg);
+        height: 49.375rem;
     }
     .tituloPequeño{
         font-size: 4rem;
@@ -324,53 +257,40 @@
             }
     }
     #sobreEl{
-        h1{
-            font-size: 3.125rem;
-        }
-        h2{
-            font-size: 3.125rem;
-        }
-        p{
-            font-size: 1.0625rem;
-        }
         div{
             display:none;
         }
     }
     #suiGeneris{
-        h3{
-            font-size: 3.125rem;
-            margin-bottom: 0rem;
-        }
-        p{
-            font-size: 1.0625rem;
+        div{
+            #video{
+                width: 18.75rem;
+            height: 9.375rem;
+            }
         }
     }
     #maquinaPajaros{
-        h3{
-            font-size: 3.125rem;
-            margin-bottom: 0rem;
-        }
-        p{
-            font-size: 1.0625rem;
+        div{
+            #video{
+                width: 18.75rem;
+            height: 9.375rem;
+            }
         }
     }
     #seruGiran{
-        h3{
-            font-size: 3.125rem;
-            margin-bottom: 0rem;
-        }
-        p{
-            font-size: 1.0625rem;
+        div{
+            #video{
+                width: 18.75rem;
+            height: 9.375rem;
+            }
         }
     }
     #solista{
-        h3{
-            font-size: 3.125rem;
-            margin-bottom: 0rem;
-        }
-        p{
-            font-size: 1.0625rem;
+        div{
+            #video{
+                width: 18.75rem;
+            height: 9.375rem;
+            }
         }
     }
     .fondoDisco{

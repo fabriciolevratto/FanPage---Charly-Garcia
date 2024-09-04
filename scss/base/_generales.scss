@@ -29,13 +29,5 @@ body {
 }
 
 .nav-link{
-  font-size: 1.5rem;
-  color: $color-fuente;
-    &:hover{
-      color: goldenrod;
-    }
-    &:active{
-      color: black;
-      background-color: goldenrod;
-    }
+  @extend %navbar;
 }

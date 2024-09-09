@@ -700,8 +700,7 @@ footer {
 
 @media (max-width: 670px) {
   .sectorUno {
-    background-image: url(../img/charlycelular.jpg);
-    height: 49.375rem; }
+    background-image: url(../img/charlycelular.jpg); }
   .tituloPequeño {
     font-size: 4rem;
     background-color: rgba(0, 0, 0, 0.5); }
@@ -718,6 +717,10 @@ footer {
         text-align: center; }
     .clics p {
       width: 15.625rem; }
+  #sobreEl h1 {
+    font-size: 3.125rem; }
+  #sobreEl h2 {
+    font-size: 3.125rem; }
   #sobreEl div {
     display: none; }
   #suiGeneris div #video {
@@ -732,6 +735,8 @@ footer {
   #solista div #video {
     width: 18.75rem;
     height: 9.375rem; }
+  .texto h3 {
+    font-size: 3.125rem; }
   .fondoDisco h1 {
     font-size: 3.125rem; }
   .discos div {

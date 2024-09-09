@@ -232,7 +232,6 @@
 @media (max-width: 670px){
     .sectorUno{
         background-image: url(../img/charlycelular.jpg);
-        height: 49.375rem;
     }
     .tituloPequeño{
         font-size: 4rem;
@@ -257,6 +256,12 @@
             }
     }
     #sobreEl{
+        h1{
+            font-size: 3.125rem;
+        }
+        h2{
+            font-size: 3.125rem;
+        }   
         div{
             display:none;
         }
@@ -291,6 +296,11 @@
                 width: 18.75rem;
             height: 9.375rem;
             }
+        }
+    }
+    .texto{
+        h3{
+            font-size: 3.125rem;
         }
     }
     .fondoDisco{

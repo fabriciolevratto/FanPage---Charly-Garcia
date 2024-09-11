@@ -1,45 +1,4 @@
 @charset "UTF-8";
-/*VARIABLE*/
-/*LISTAS
-
-$colores: red, green, blue, tomato, pink;
-$font: 20px, 25px, 30px, 42px;
-
-se aplica:
-h1{
-    color: nth($colores, 4);
-}*/
-/*OPERACIONES
-
-$ancho: 750px;
-img{
-    widht: $ancho / 2;
-}*/
-/*MAPAS
-
-$boton:(
-    bg-color: black,
-    border-boton: 2px solid tomato,
-    color-text: white,
-);
-
-.boton {
-background-color: map-get($boton, bg-color);
-color: map-get($boton, color-text);
-}*/
-/*EXTENDS
-Valores fijos.
-
-%enlaces{
-    text-decoration: none;
-    color: black;
-}
-
-.boton{
-    background-color: aqua;
-    border: solid 1px black;
-    @extend %enlaces;
-}*/
 @import url("https://fonts.googleapis.com/css2?family=League+Spartan:wght@100..900&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=League+Gothic&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Ledger&display=swap");
@@ -52,24 +11,6 @@ Valores fijos.
     color: black;
     background-color: goldenrod; }
 
-/*MIXIN*/
-/*.galeria{
-    @include flex(flex, space-around, center)
-}*/
-/*CONDICIONALES
-
-@mixin modos ($modo){
-    @if $modo == black{
-        border: solid 2px blue;
-    }
-    @else{
-        border: solid 2px red;
-    }
-}
-
-.bg-elemento{
-    @include modos (black);
-}*/
 * {
   margin: 0;
   padding: 0;
@@ -123,7 +64,7 @@ body {
   height: 49.875rem;
   background-color: #191919;
   display: flex;
-  justify-content: start;
+  justify-content: space-around;
   align-items: center; }
 
 .top {
@@ -569,7 +510,10 @@ footer {
     .clics h2 {
       font-size: 6rem; }
       .clics h2 span {
-        font-size: 6rem; } }
+        font-size: 6rem; }
+  #carouselExample {
+    width: 25rem;
+    height: 28.125rem; } }
 
 @media (max-width: 1280px) {
   .sectorUno {
@@ -615,13 +559,23 @@ footer {
   .navbar-toggler {
     background-color: white; }
   .contenedorImg {
-    background-position: left; } }
+    background-position: left; }
+  .discos div {
+    width: 18.75rem;
+    height: 18.75rem; }
+    .discos div a img {
+      width: 18.75rem;
+      height: 18.75rem; }
+      .discos div a img:hover {
+        border: .125rem solid goldenrod; } }
 
 @media (max-width: 910px) {
   .sectorTres {
     height: 31.25rem; }
     .sectorTres a p {
       font-size: 2.1875rem; }
+  #sobreEl {
+    height: auto; }
   #suiGeneris div #video {
     width: 31.25rem;
     height: 18.75rem; }
@@ -687,6 +641,9 @@ footer {
     padding-bottom: 1.25rem; }
   #sobreEl p {
     font-size: 1.25rem; }
+  #sobreEl img {
+    width: 18.75rem;
+    height: 18.75rem; }
   #suiGeneris p {
     font-size: 1.25rem; }
   #maquinaPajaros p {

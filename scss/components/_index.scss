@@ -33,7 +33,7 @@
     width: 100%;
     height: 49.875rem;
     background-color: rgb(25, 25, 25);
-    @include flex(flex, start, center);
+    @include flex(flex, space-around, center);
 }
 
 .top{

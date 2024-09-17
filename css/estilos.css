@@ -344,22 +344,19 @@ body {
 .fondoReconocimientos {
   background-color: #191919; }
 
-.contenedorImg {
-  width: 100%;
-  height: calc(100vh - 4.625rem);
-  background-image: url(../img/charlyreconocimiento.jpg);
-  background-repeat: no-repeat;
-  background-size: cover;
-  background-position: center;
-  background-attachment: fixed; }
-
 .contenedorRec {
   width: 100%;
-  height: 62.5rem;
   display: flex;
   justify-content: start;
   align-items: center;
   flex-direction: column; }
+  .contenedorRec h1 {
+    font-family: "League Gothic";
+    font-size: 6rem;
+    padding: .625rem;
+    color: white; }
+    .contenedorRec h1::selection {
+      color: goldenrod; }
   .contenedorRec p {
     font-family: "League Gothic";
     font-size: 2.25rem;
@@ -558,8 +555,6 @@ footer {
     background-position: right; }
   .navbar-toggler {
     background-color: white; }
-  .contenedorImg {
-    background-position: left; }
   .discos div {
     width: 18.75rem;
     height: 18.75rem; }
@@ -714,11 +709,11 @@ footer {
       height: 15.625rem; }
       .imagen13 img:hover {
         border: .125rem solid goldenrod; }
+  .contenedorRec h1 {
+    font-size: 3.125rem; }
   .contenedorRec p {
     font-size: 1.25rem;
     margin: 3.125rem; }
-  .contenedorImg {
-    background-image: url(../img/charlyreconocimientofoto.jpg); }
   .item1, .item2 {
     height: 12.5rem; }
   .item3 {

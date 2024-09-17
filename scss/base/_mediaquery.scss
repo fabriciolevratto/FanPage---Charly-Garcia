@@ -83,9 +83,6 @@
     .navbar-toggler{
         background-color: white;
     }
-    .contenedorImg{
-        background-position: left;
-    }
     .discos{
         div{
             width: 18.75rem;
@@ -363,14 +360,15 @@
             }
     }
     .contenedorRec{
+        h1{
+            font-size: 3.125rem;
+        }
         p{
             font-size: 1.25rem;
             margin: 3.125rem;
         }
     }
-    .contenedorImg{
-        background-image: url(../img/charlyreconocimientofoto.jpg)
-    }
+    
     .item1, .item2{
         height: 12.5rem;
     }

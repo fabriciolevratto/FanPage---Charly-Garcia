@@ -657,7 +657,8 @@ footer {
 
 @media (max-width: 670px) {
   .sectorUno {
-    background-image: url(../img/charlycelular.jpg); }
+    background-image: none;
+    background-color: black; }
   .tituloPequeño {
     font-size: 4rem;
     background-color: rgba(0, 0, 0, 0.5); }
@@ -717,7 +718,7 @@ footer {
     font-size: 1.25rem;
     margin: 3.125rem; }
   .contenedorImg {
-    background-position: -20em; }
+    background-image: url(../img/charlyreconocimientofoto.jpg); }
   .item1, .item2 {
     height: 12.5rem; }
   .item3 {
